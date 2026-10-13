@@ -106,7 +106,7 @@ if (filmContainer && filmToggle && !reducedMotion.matches && !navigator.connecti
     player = new YT.Player('hero-player', {
       host: 'https://www.youtube-nocookie.com',
       videoId: HERO_FILM.id,
-      playerVars: { autoplay: 1, controls: 0, playsinline: 1, disablekb: 1, rel: 0, start: HERO_FILM.start, end: HERO_FILM.end, origin: window.location.origin },
+      playerVars: { autoplay: 1, mute: 1, controls: 0, playsinline: 1, disablekb: 1, rel: 0, start: HERO_FILM.start, end: HERO_FILM.end, origin: window.location.origin },
       events: {
         onReady(event) {
           ready = true;
